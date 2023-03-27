@@ -33,7 +33,11 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-INSTALLED_APPS = MY_INSTALLED_APPS + DEFAULT_APPS
+THIRD_PARTY = [
+    'embed_video',
+]
+
+INSTALLED_APPS = MY_INSTALLED_APPS + DEFAULT_APPS + THIRD_PARTY
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
